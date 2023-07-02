@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />    <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* div{
+      border: 1px solid;
+    } */
+    .review{
+      width:124px; height: 60px; 
+    }
+    .product{
+      margin-left: 150px; 
+      margin-top: 50px;
+    }
+    .image-product{
+      height: 490px ; width: 1050px; margin-top: 50px; display: flex; flex-direction: row;
+    }
+    .card-detail{
+      width: 378px; height: 378px;
+    }
+    .description{
+      height: 300px; width: 1050px;
+    }
+    .judul-product{
+      margin-left: 40px;
+    }
+    .btn-size-jumlah{
+      display: flex;
+    }
+
+    .pilihan-baju img{
+      width: 65px; height: 65px;
+    }
+    .pilihan-baju-2{
+      margin-left: 10px;
+    }
+    .pilihan-baju-3{
+      margin-left: 10px;
+    }
+    .pilihan-baju-4 {
+      margin-left: 10px;
+    }
+    .pilihan-baju-5{
+      margin-left: 10px;
+    }
+
+          .footer {
+            background-color:  #DB3022;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+           }
+
+
+           @media screen and (max-width: 576px){
+            .container{
+              /* background-color: yellowgreen; */
+              width: 356px;
+            }
+            .product{
+              width: 240px;
+              margin-left: 20px;
+            }
+            .keterangan-product{
+              display: block;
+            }
+            .card-img-top{
+              width: 340px;
+              height: 340px;
+            }
+            .description{
+              width: 300px;
+            }
+            .image-product{
+              display: flex; flex-direction: column; height: 820px; width: 346px;
+            }
+            .btn-light-buy{
+              margin-top: 10px;
+            }
+            .info{
+              margin-top: 180px;
+            }
+            .judul-product{
+              margin-top: 70px;
+              margin-left: auto;
+            }
+            .review{
+              margin-top: 520px;
+              padding-right: 15px;
+              width: 250px;
+              /* background-color: #DB3022; */
+            }
+            .pilihan-baju img{
+              width: 60px; height: 60px; 
+            }
+            .card-detail{
+              width: 360px;
+            }
+            
+           
+          }
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav id="home-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="logo-blanja mr-5" href="index.html">
+        <img src="../assets/img/blanja.png" height="50" class="d-inline-block align-top" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ml-2 form-inline row justify-content-center">
+            <input id="searchbox" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <img class="searchLogo" src="../assets/img/search.png" alt="" style="position: absolute; margin-left: 400px;"/>
+            <img id="homeFilter" class="mr-4" src="/assets/img/filter.png" alt="filter" />
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 row justify-content-center">
+          <a href="../pages/orders.html">
+            <img class="mr-4" src="/assets/img/cart.png" alt="cart" />
+          </a>
+          <a href="/pages/login.html">
+              <button class="btn btn-danger rounded-pill mr-2" style="width: 100px; height: 36;" type="button">
+              Login
+            </button>
+          </a>
+          <a href="/pages/signup.html">
+            <button class="btn border rounded-pill"  style="width: 100px; height: 36;" type="button">
+              Signup
+            </button>
+          </a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product" style="margin-top: 90px;">
+        <div class="keterangan-product" >
+            <p>Home > Product > Category</p>
+        </div>
+        <div class="image-product" >
+            <div class="card-detail">
+                <img
+                  class="card-img-top"
+                  src="../assets/img/product/baju-cream.png"
+                  alt="Card image cap"
+                  style=" border-radius: 8px;"
+                />
+                <div class="pilihan-baju" style="display: flex; margin-top: 17px;">
+                  <img class="pilihan-baju-1" src="../assets/img/product/orange.png" alt="" >
+                  <img class="pilihan-baju-2" src="../assets/img/product/navy.png" alt="" >
+                  <img class="pilihan-baju-3" src="../assets/img/product/blue.png" alt="" >
+                  <img class="pilihan-baju-4" src="../assets/img/product/putih.png" alt="" >
+                  <img class="pilihan-baju-5" src="../assets/img/product/baju-cream.png" alt="" >
+
+                </div>
+              </div>
+              <div class="judul-product">
+                <h1>Baju muslim pria</h1>
+                <p>Zalora Cloth</p>
+                <p>⭐⭐⭐⭐⭐(10)</p>
+                <p>Price</p>
+                <h1>$ 20.0</h1>
+                <h5>Color</h5>
+                <div style="display: flex">
+                  <a href=""><img src="../assets/img/color/black.png" style="width: 32px; height: 32px;"></a>
+                  <a href=""><img src="../assets/img/color/red.png" style="width: 32px; height: 32px; margin-left: 12px;"></a>
+                  <a href=""><img src="../assets/img/color/blue.png" style="width: 32px; height: 32px; margin-left: 12px;"></a>
+                  <a href=""><img src="../assets/img/color/green.png" style="width: 32px; height: 32px; margin-left: 12px;"></a>
+                </div>
+                <div class="btn-size-jumlah">
+                    <div class="size">
+                        <h5>Size</h5>
+                        <div style="display: flex;">
+                            <button style="border-radius: 50%; height:36px ; width:36px; border: 1px;">-</button>
+                            <h6 style="margin-left: 21px;">28</h6>
+                            <button style="margin-left: 21px;border-radius: 50%; height:36px ; width:36px;  border: 1px">+</button>    
+                        </div>
+                    </div>
+                    <div class="jumlah" style="margin-left: 89px">
+                        <h5>Jumlah</h5>
+                        <div style="display: flex;">
+                            <button style="border-radius: 50%; height:36px ; width:36px;  border: 1px">-</button>
+                            <h6 style="margin-left: 21px;">1</h6>
+                            <button style="margin-left: 21px;border-radius: 50%; height:36px ; width:36px; border: 1px ">+</button>    
+                        </div>
+                    </div>
+                  </div>
+                  <div class="btn-buy" style="margin-top: 20px;">
+                    <button type="button" class="btn btn-light" style="border-radius: 25px; width: 160px; height: 48px;">Chat</button>
+                    <button type="button" class="btn btn-light" style="border-radius: 25px; width: 160px; height: 48px;">Add bag</button>
+                    <button type="button" class="btn-light-buy" style=" border:1px; border-radius: 25px;width: 213px; height: 48px;background-color: #DB3022; color: #ffffff;">Buy now</button>
+                  </div>
+
+              </div>
+            </div>
+            <div class="info">
+                <h4>Informasi Produk</h4>
+                <h6>Condition</h6>
+                <h6 style="color: #DB3022;">New</h6>
+            </div>
+            <div class="description">
+                <h4>Description</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident suscipit repudiandae nobis ducimus fuga, rerum labore minima repellat perferendis doloribus mollitia natus voluptatem deserunt quos similique. Cumque ut quod excepturi dignissimos quasi et error labore amet, velit ipsum eaque modi, veritatis rerum eum quos soluta hic obcaecati, ratione esse maiores! Quasi accusamus deleniti tenetur eaque vitae necessitatibus minus nobis, omnis error perferendis repudiandae neque recusandae similique amet alias. Quasi impedit corporis modi animi, quos placeat voluptas sed totam, a beatae dicta doloremque, adipisci vero aspernatur exercitationem magnam repellat neque molestiae similique non voluptatem laborum? Laboriosam quam assumenda laborum ipsum dicta.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit dolores explicabo unde mollitia numquam suscipit repudiandae animi? Illo quisquam consequatur quaerat eaque, expedita consectetur fugiat, itaque tenetur assumenda deserunt cupiditate, similique fugit laborum modi culpa maxime adipisci aliquid ipsum fuga repellendus magni! Quisquam voluptatem laborum perspiciatis, consectetur nemo doloremque libero.</p>
+            </div>
+            <div class="review">
+              <h3>Product review</h3>
+            </div>
+            <div style="display: flex;">
+              <div class="review" style="display: flex; margin-top: 50px;">
+                <img src="../assets/img/5.0.png" alt="">  
+                <img src="../assets/img/10.png" style="width:30px; height: 20px;margin-top:40px;">
+              </div>
+              
+              <div class="ml-md-5 ml-auto" id="rate">
+                <div class="d-flex flex-column">
+                  <div class="d-flex justify-content-center"><img src="../assets/img/activated.png" alt="stars">
+                    <span>5</span>
+                  </div>
+                  <div class="d-flex justify-content-center"><img src="../assets/img/activated.png" alt="stars">
+                    <span>4</span>
+                  </div>
+                  <div class="d-flex justify-content-center"><img src="../assets/img/activated.png" alt="stars">
+                    <span>3</span>
+                  </div>
+                  <div class="d-flex justify-content-center"><img src="../assets/img/activated.png" alt="stars">
+                    <span>2</span>
+                  </div>
+                  <div class="d-flex justify-content-center"><img src="../assets/img/activated.png" alt="stars">
+                    <span>1</span>
+                  </div>
+                </div>
+                </div>
+              <div class="ml-3">
+                <hr class="mt-2" style="border: 5px red solid; width: 120px; border-radius: 8px;">
+              </div>
+              <div class="ml-1 d-flex flex-column">
+                <span>5</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+            </div>
+            <img src="../assets/img/bintang.png" style="margin-top: 14px;">
+            </div>
+
+            <hr>
+    </section>
+    <section class="mt-5">
+      <div class="container mt-5">
+        <h2 class="ml-3">You can also like this</h2>
+        <p class="ml-3">You've never seen before!</p>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-5">
+            <div>
+              <img class="w-100" src="../assets/img/jas.png" alt="cloth" />
+              <div class="p-2">
+                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                <h5 class="text-danger">$ 40.0</h5>
+                <img src="../assets/img/star.png" alt="stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>Copyright Blanja.com</p>
+    </div>  
+  </footer>
+
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>    
+</body>
+</html>
